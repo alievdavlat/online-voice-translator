@@ -9,11 +9,11 @@ import {
   IconVolume,
 } from "@tabler/icons-react";
 import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRecognition";
-import TextArea from "@/components/Inputs/TextArea";
-import FileUpload from "@/components/Inputs/FileUpload";
-import LinkPaste from "@/components/Inputs/LinkPaste";
-import LanguageSelector from "@/components/Inputs/LanguageSelector";
-import useGoogleTranslate from "@/hooks/useGoogleTranslate";
+import TextArea from "../components/Inputs/TextArea";
+import FileUpload from "../components/Inputs/FileUpload";
+import LinkPaste from "../components/Inputs/LinkPaste";
+import LanguageSelector from "../components/Inputs/LanguageSelector";
+import useGoogleTranslate from "../hooks/useGoogleTranslate";
 import {rtfToText} from '../utils/rtfToText'
 
 import SvgDecorations from "@/components/SvgDecorations";
