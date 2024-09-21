@@ -2,8 +2,10 @@ import * as React from 'react';
 import SpeechRecognition, {useSpeechRecognition} from 'react-speech-recognition';
 import {IconMicrophone} from '@tabler/icons-react'
 
-
-const SpeechRecognitionComponent = ({setSourceText}) => {
+interface SpeechRecognitionProps {
+  setSourceText: React.Dispatch<React.SetStateAction<string>>
+}
+const SpeechRecognitionComponent = ({setSourceText}:SpeechRecognitionProps) => {
 
   const {transcript, listening} = useSpeechRecognition()
 
