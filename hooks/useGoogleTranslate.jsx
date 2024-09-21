@@ -34,7 +34,6 @@ import { useEffect, useState } from "react";
           try {
             const {response} =   await AIChatSession.sendMessage(`Translate this text: ${sourceText} into ${selectedLanguage}`)
               const data = JSON.parse(response.candidates[0].content.parts[0].text)
-              console.log(data.translation);
               
             setTargetText(data.translation);
           } catch (error) {
