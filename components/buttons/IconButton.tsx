@@ -1,6 +1,12 @@
+import { TablerIcon } from "@tabler/icons-react";
 import React from "react";
 
-const IconButton = ({ Icon, onClick }) => (
+interface IconButtonProps {
+  Icon: TablerIcon;
+  onClick: () => void;
+}
+
+const IconButton = ({ Icon, onClick }: IconButtonProps) => (
   <span
     className="cursor-pointer flex items-center space-x-2"
     onClick={onClick}
